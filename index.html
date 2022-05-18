@@ -29,32 +29,32 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%,-50%);
-      width: 380px;
-      height: 600px;
-      border-radius: 20px;
-      /* box-shadow: 0px 1px 12px 0px; */
+      width: 450px;
+      height: 685px;
+      border-radius: 1rem;
       background-color: white;
+      
 }
     .container{
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
+      
     }
-    .container h2{
-      margin-top: 10%;
+    .container h1{
+      margin-top:2rem;
       color: hsl(223, 47%, 23%);
-      font-weight: 900;
       margin-bottom: 0px;
     }
     .img{
       background-image: url(images/illustration-hero.svg);
-      width: 380px;
-      height: 180px;
+      width: 450px;
+      height: 220px;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: top top;
-      border-radius: 20px 20px 0 0;
+      border-radius: 1rem 1rem 0 0;
       position: relative;
       top: 0;
       
@@ -63,49 +63,58 @@
       text-align: center;
       color: #8C93A9;
       font-size: 16px;
+      margin-top: 1rem;
+      line-height: 1.5rem;
     }
     .music{
-      width: 310px;
-      height: 80px;
-      border-radius: 10px;
-      background-color:hsl(225, 100%, 98%);
+      width: 320px;
+      height: 52px;
+      padding: 1.25rem 1.5rem;
+      border-radius: 1rem;
+      background-color:#f5f7ff;;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: row;
+      margin: 1.25rem 0;
+      margin-top: 7px;
+      margin-bottom: 7px;
     }
-   .price{
-    margin-right: 15%;
-   }
+    .music a{
+      font-weight: 700;
+    }
+.price p{
+  padding-left: 0;
+  padding-right: 90px;
+  color: #1f2f56;;
+}
    .price::first-line{
      font-weight: bold;
      color: #000;
    }
-   a{
-     margin-right: 5%;
-   }
-   .music-icon{
-     margin-left: 5%;
-   }
+
    .btn{
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-top: 30px;
-     width: 310px;
+     margin-top:27px;
+     width: 370px;
      background-color: hsl(245, 75%, 52%);
-     height: 50px;
-     border-radius: 10px;
-     box-shadow: #d8d7f8 0px 12px 15px 0px;
+     height: 53px;
+     border-radius: 0.75rem;
+     box-shadow: 0px 20px 15px 0px #e0e8ff;
    }
    .btn a{
      text-decoration: none;
      color: white;
    }
+   span{
+     color: #7280a7;
+   }
 .Cancel{
   text-decoration: none;
   margin-top: 30px;
-  color: #8F99B4;
+  color: #7280a7;
   font-weight: 900;
 }
 @media (min-width:375px) and (max-width:1400px) {
@@ -120,7 +129,7 @@
   <div class="card">
   <div class="container">
     <div class="img"></div>
-    <h2>Order Summary</h2>
+    <h1>Order Summary</h1>
     <p class="paragraph">You can now listen to millions of songs,<br>audiobooks, and podcasts on any device<br>anywhere you like!</p>
 
        <div class="music">
