@@ -51,7 +51,7 @@
       background-image: url(images/illustration-hero.svg);
       width: 450px;
       height: 220px;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: top top;
       border-radius: 1rem 1rem 0 0;
@@ -65,15 +65,16 @@
       font-size: 16px;
       margin-top: 1rem;
       line-height: 1.5rem;
+      margin-left: 1rem;
     }
     .music{
-      width: 320px;
+      width:80%;
       height: 52px;
       padding: 1.25rem 1.5rem;
       border-radius: 1rem;
       background-color:#f5f7ff;;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: row;
       margin: 1.25rem 0;
@@ -82,11 +83,16 @@
     }
     .music a{
       font-weight: 700;
+      display: flex;
+      position: fixed;
+      right:10%;
     }
 .price p{
   padding-left: 0;
-  padding-right: 90px;
-  color: #1f2f56;;
+  color: #1f2f56;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
    .price::first-line{
      font-weight: bold;
@@ -98,7 +104,7 @@
      justify-content: center;
      align-items: center;
      margin-top:27px;
-     width: 370px;
+     width: 90%;
      background-color: hsl(245, 75%, 52%);
      height: 53px;
      border-radius: 0.75rem;
@@ -120,7 +126,7 @@
 @media (min-width:375px) and (max-width:1400px) {
   .card{width: 330px;}
   .img{width: 330px;}
-  .music{width: 300px;}
+  .music{max-width:80%;}
   .btn{width: 300px;}
 }
   </style>
